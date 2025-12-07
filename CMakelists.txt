@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.10)
+project(infix_postfix_sim)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_AUTOMOC ON)
+
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
+
+add_executable(infix-postfix-sim
+    main.cpp
+    simwindow.cpp
+    simwindow.h
+)
+
+target_link_libraries(infix-postfix-sim Qt5::Widgets)
